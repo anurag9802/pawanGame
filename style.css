@@ -1,0 +1,181 @@
+.game {
+    width: 600px;
+    height: 305px;
+    /* border: 3px solid black; */
+    margin: auto;
+    background-color: #f7f7f7;
+}
+
+#textBoxForMobile {
+    display: none;
+}
+
+
+/* @media screen and (max-width: 600px) {
+    .game {
+      display: none;
+    }
+    #textBox {
+        display: none;
+    }
+  } */
+
+@media (hover: none) and (pointer: coarse) {
+    /* ... */
+    .game {
+        display: none;
+    }
+    #textBox {
+        display: none;
+    }
+    #textBoxForMobile {
+        display: flex;
+        font-size: 20px;
+        font-family: cursive;
+        height: 115px;
+        align-items: center;
+        width: 300px;
+        size: 100px;
+        margin-top: 200px;
+        margin: auto;
+        margin-top: 200px;
+    }
+}
+
+#dino {
+    width: 75px;
+    height: 75px;
+    background-image: url(pawan.png);
+    background-size: 75px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+#strip {
+    display: flex;
+    margin-top: 77px;
+}
+
+#strip1 {
+    width: 300px;
+    height: 32px;
+    /* background-image: url(strip1.png); */
+    display: inline-flex;
+}
+
+#strip2 {
+    width: 300px;
+    height: 32px;
+    /* background-image: url(strip2.png); */
+    display: inline-flex;
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+#cloud1 {
+    width: 64px;
+    height: 27px;
+    background-size: cover;
+    position: relative;
+    top: 50px;
+}
+
+#cloud2 {
+    width: 64px;
+    height: 27px;
+    background-size: cover;
+    position: relative;
+    top: 60px;
+}
+
+#cloud3 {
+    width: 64px;
+    height: 27px;
+    background-size: cover;
+    position: relative;
+    top: 65px;
+}
+
+@keyframes cloudFrame {
+    0% {
+        left: 535px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.cloudanimation {
+    animation: cloudFrame 8s linear infinite;
+    background-image: url(cloud1.png);
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    50% {
+        top: 10px;
+    }
+    80% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 100px;
+    left: 580px;
+    background-image: url("cactus.png");
+    background-size: cover;
+    /* animation: blockMovement 1.5s   linear infinite; */
+}
+
+@keyframes blockMovement {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -10px;
+    }
+}
+
+#textBox {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    background-color: #f7f7f7;
+}
+
+#endblock {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: gray;
+    margin-top: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    /* background-color: red; */
+    color: black;
+    text-align: center;
+}
