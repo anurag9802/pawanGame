@@ -11,14 +11,6 @@
 }
 
 
-/* @media screen and (max-width: 600px) {
-    .game {
-      display: none;
-    }
-    #textBox {
-        display: none;
-    }
-  } */
 
 @media (hover: none) and (pointer: coarse) {
     /* ... */
@@ -42,10 +34,10 @@
     }
 }
 
-#dino {
+#dino { 
     width: 75px;
     height: 75px;
-    background-image: url(pawan.png);
+    background-image: url(./static/pics/pawan.png);
     background-size: 75px;
     position: relative;
     top: 150px;
@@ -110,7 +102,7 @@
 
 .cloudanimation {
     animation: cloudFrame 8s linear infinite;
-    background-image: url(cloud1.png);
+    background-image: url(./static/pics/cloud1.png);
 }
 
 @keyframes jump {
@@ -137,7 +129,7 @@
     position: relative;
     top: 100px;
     left: 580px;
-    background-image: url("cactus.png");
+    background-image: url("./static/pics/cactus.png");
     background-size: cover;
     /* animation: blockMovement 1.5s   linear infinite; */
 }

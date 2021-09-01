@@ -54,7 +54,7 @@ function updateScore() {
 
 
     if (score % 100 == 0) {
-        var snd1 = new Audio("reached100.mp3")
+        var snd1 = new Audio("./static/audio/reached100.mp3")
         snd1.play();
     }
 }
@@ -64,7 +64,7 @@ function updateScore() {
 function stopGame() {
 
 
-    var snd2 = new Audio("deathsound.mp3")
+    var snd2 = new Audio("./static/audio/deathsound.mp3")
     snd2.play();
 
     document.getElementById("textBox").innerHTML = `game over . . . . tap to play again`
@@ -145,12 +145,12 @@ function startGame() {
 
 
         if (stripstate == 0) {
-            s1.style.backgroundImage = "url(strip1.png)"
-            s2.style.backgroundImage = "url(strip2.png)"
+            s1.style.backgroundImage = "url(./static/pics/strip1.png)"
+            s2.style.backgroundImage = "url(./static/pics/strip2.png)"
             stripstate = 1
         } else {
-            s1.style.backgroundImage = "url(strip2.png)"
-            s2.style.backgroundImage = "url(strip1.png)"
+            s1.style.backgroundImage = "url(./static/pics/strip2.png)"
+            s2.style.backgroundImage = "url(./static/pics/strip1.png)"
             stripstate = 0;
 
         }
@@ -173,12 +173,12 @@ document.addEventListener("keydown", startGame)
 
 
 document.addEventListener("keydown", function(event) {
-    var snd = new Audio("jumpsound.mp3")
+    var snd = new Audio("./static/audio/jumpsound.mp3")
     snd.play();
     jump();
 })
 document.addEventListener("click", function(event) {
-    var snd = new Audio("jumpsound.mp3")
+    var snd = new Audio("./static/audio/jumpsound.mp3")
     snd.play();
     jump();
 })
